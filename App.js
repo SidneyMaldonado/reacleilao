@@ -1,11 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, View } from 'react-native';
+import ListarAnimal from './src/components/ListarAnimal';
+import IncluirAnimal from './src/components/IncluirAnimal';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+       <Text>Lista de Animais</Text>
+      <IncluirAnimal/>
+      <ListarAnimal />
     </View>
   );
 }
@@ -18,3 +20,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+
+export function Incluir() {
+}
